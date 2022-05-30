@@ -1,0 +1,54 @@
+<h2>Structural Directives:</h2>
+
+<h3 *ngIf="displayName">Dipam Patel</h3>
+
+<h3 *ngIf="displayName; else elseBlock">Dipam</h3>
+<ng-template #elseBlock>
+    <h3>Hidden Block</h3>
+</ng-template>
+
+<h2 *ngIf="displayName; then thenBlk; else elseBlk"></h2>
+<ng-template #thenBlk>
+    <h3>Dipam (Not Hidden)</h3>
+</ng-template>
+<ng-template #elseBlk>
+    <h3>Patel (Hidden)</h3>
+</ng-template>
+
+<h2>ngSwitch:</h2>
+<div [ngSwitch]="myColor">
+    <div *ngSwitchCase="'red'">You picked Red Color</div>
+    <div *ngSwitchCase="'green'">You picked green Color</div>
+    <div *ngSwitchCase="'blue'">You picked blue Color</div>
+    <div *ngSwitchDefault>You picked Default Color</div>
+</div>
+
+<h2>ngFor:</h2>
+<div *ngFor="let color of colors">
+    <p>{{color}}</p>
+</div>
+
+<h2>ngFor with index:</h2>
+<div *ngFor="let color of colors; index as i">
+    <p>{{i}} {{color}}</p>
+</div>
+
+<h2>ngFor (true if first element):</h2>
+<div *ngFor="let color of colors; first as f">
+    <p>{{f}} {{color}}</p>
+</div>
+
+<h2>ngFor (true if last element):</h2>
+<div *ngFor="let color of colors; last as l">
+    <p>{{l}} {{color}}</p>
+</div>
+
+<h2>ngFor (true if odd index element):</h2>
+<div *ngFor="let color of colors; odd as o; index as i">
+    <p>{{i}} {{o}} {{color}}</p>
+</div>
+
+<h2>ngFor (true if even index element):</h2>
+<div *ngFor="let color of colors; even as e; index as i">
+    <p>{{i}} {{e}} {{color}}</p>
+</div>

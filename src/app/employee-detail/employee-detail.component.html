@@ -1,0 +1,7 @@
+<h2>Employee Detail:</h2>
+<h4 style="color: red;">{{message}}</h4>
+<h3>{{errorMsg}}</h3>
+<ul *ngFor="let employee of employees; index as i">
+    <li class="myList" (click)="onSelect(employee)" [class.selected]="isEmployeeSelected(employee)">{{i+1}}) ID: {{employee.id}} &nbsp;&nbsp; Name: {{employee.name}} &nbsp;&nbsp; Age: {{employee.age}}</li>
+</ul>
+

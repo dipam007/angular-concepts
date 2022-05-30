@@ -1,0 +1,20 @@
+<h2>Property Binding:</h2>
+
+<input type="text" value="Dipam" [id]="myId">  <br><br>
+
+<!-- Limitation of interpolation it can only works for string values. In belowe code id="{{myId}}" is interpolation -->
+<input type="text" value="Dipam" id="{{myId}}"> 
+
+<br><br>
+
+<!-- if we write disabled="false" still it is disabled. so that interpolation does not works -->
+<input type="text" value="Dipam" disabled="false">  
+
+<br><br>
+
+<!-- Property binding -->
+<input type="text" value="Dipam" [disabled]="false"> 
+<br><br>
+<input type="text" value="Dipam" [disabled]="isDisabled">
+<br><br>
+<input type="text" value="Dipam" bind-disabled="isDisabled">

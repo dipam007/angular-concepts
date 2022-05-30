@@ -1,0 +1,10 @@
+<h2>Class Binding:</h2>
+<h3 class="text-success">Dipam Patel</h3>
+<h3 [class]="successClass">Dipam Patel</h3>
+
+<!-- Conditionally apply single class -->
+<h3 [class.text-danger]="hasError">Dipam Patel</h3>
+
+<!-- If we want to conditionally apply multiple class then we need to use ngClass directives -->
+<h3 [ngClass]="myClass">Dipam Patel</h3>
+

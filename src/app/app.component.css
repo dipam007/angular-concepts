@@ -1,0 +1,38 @@
+.myHead{
+    text-align: center;
+    color: blueviolet;
+    font-size: 40px;
+}
+
+
+nav{
+    padding: 10px;
+}
+nav a{
+    text-align: center;
+    background-color: lightgrey;
+    color: rgb(82, 82, 82);
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+nav a:hover{
+    color: white;
+    background-color: brown;
+}
+nav a.active{
+    color: blueviolet;
+    background-color: aqua;
+}
+
+.myBlock{
+    margin: 4px;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.myView{
+    margin: 8px;
+    background-color: tan;
+    padding: 10px;
+}

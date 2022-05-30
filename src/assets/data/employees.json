@@ -1,0 +1,7 @@
+[
+    {"id": 1, "name": "Dipam", "age": 21, "contact": 123456789},
+    {"id": 2, "name": "Deep", "age": 22, "contact": 8547595214},
+    {"id": 3, "name": "Het", "age": 23, "contact": 9584561235},
+    {"id": 4, "name": "Jay", "age": 24, "contact": 8574962587},
+    {"id": 5, "name": "Anand", "age": 24, "contact": 1254786321}
+]

@@ -1,0 +1,12 @@
+<h3>Employee Full Detail:</h3>
+<p>Employee ID: {{empId}}</p>
+<p>
+    <button class="mybtn" (click)="showOverview()">Overview</button>
+    <button class="mybtn" (click)="showContact()">Contact</button>
+</p>
+<!-- router-outlet for childern routing components overview and contact -->
+<router-outlet></router-outlet>   
+
+<button class="mybtn" (click)="goPre()" [disabled]="isDisabledPre">previous</button>
+<button class="mybtn" (click)="goBack()">Back</button>
+<button class="mybtn" (click)="goNext()" [disabled]="isDisablednxt">next</button>

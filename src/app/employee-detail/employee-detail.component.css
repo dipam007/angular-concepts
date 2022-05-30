@@ -1,0 +1,18 @@
+.myList{
+    background-color: khaki; 
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px; 
+    width: 18%;
+}
+.myList:hover{
+    background-color: coral;
+    color: black;
+}
+
+.selected{
+    background-color: indigo;
+    color: lightgoldenrodyellow;
+}

@@ -1,0 +1,8 @@
+<h2>Event Binding:</h2>
+<button (click)="onClick($event)" (mouseover)="onHover($event)">Click</button>
+<p>Event Type is {{eventType}}</p>
+
+<!-- whenever user click on Greet button then greeting value is change to 'Welcome Dipam Patel'. -->
+<button (click)="greeting='Welcome Dipam Patel'">Greet</button>
+<p>{{greeting}}</p>
+
